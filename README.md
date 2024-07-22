@@ -23,7 +23,7 @@
 
 ## 使用方法
 
-### 获取JSON数据
+### 获取 JSON 数据
 
 要从提供的URL获取并解析JSON数据，可以使用以下示例代码（colab）：
 
@@ -43,9 +43,10 @@ def fetch_json_from_url(url):
       return None
 
 models_info = fetch_json_from_url("https://raw.githubusercontent.com/CocoSgt/LLMs_info/main/models_info.json")
-companies_info = fetch_json_from_url("https://raw.githubusercontent.com/CocoSgt/LLMs_info/main/companies_info.json")```
+companies_info = fetch_json_from_url("https://raw.githubusercontent.com/CocoSgt/LLMs_info/main/companies_info.json")
+```
 
-### 示例：调用语言模型
+### 示例：基于这个 JSON，封一个请求
 
 以下示例代码展示了如何调用不同的语言模型，获取模型的地址、价格和其他信息，并在项目中使用：
 (假定使用 colab，并将 key 以 Key_xxx 的方式存放)
@@ -158,7 +159,7 @@ token：
 
 
 
-调用这个模型 & 计算成本
+### 调用请求 & 计算成本
 ```python
 messages = [
     {
