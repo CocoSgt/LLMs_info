@@ -64,6 +64,7 @@ def LLM(messages, model_name, models_info=models_info, companies_info=companies_
         raise ValueError(f"Model {model_name} not found")
 
     model_config = companies_info.get(model['brand'])
+
     if not model_config:
         raise ValueError(f"Configuration for brand {model['brand']} not found")
 
@@ -79,7 +80,7 @@ def LLM(messages, model_name, models_info=models_info, companies_info=companies_
     }
 
     if stream:
-        api_params["stream_options"] = {"include_usage": True}  
+        api_params["stream_options"] = {"include_usage": True}
 
     start_time = time.time()
 
@@ -98,7 +99,8 @@ def LLM(messages, model_name, models_info=models_info, companies_info=companies_
 
         if stream:
             for chunk in response:
-                if chunk.choices:
+                if chunk.choices and chunk.choices[0].delta.content is not None:
+                    # print(chunk)
                     chunk_content = str(chunk.choices[0].delta.content)
                     print(chunk_content, end='')
                     rsp['content'] += chunk_content
@@ -111,11 +113,6 @@ def LLM(messages, model_name, models_info=models_info, companies_info=companies_
             rsp['token']['input'] = response.usage.prompt_tokens
             rsp['token']['output'] = response.usage.completion_tokens
             rsp['token']['total'] = response.usage.total_tokens
-
-        # rsp['cost']['input'] = models_info[rsp['model']]['input_cost'] * rsp['token']['input'] / 1_000_000
-        # rsp['cost']['output'] = models_info[rsp['model']]['output_cost'] * rsp['token']['output'] / 1_000_000
-        # rsp['cost']['total'] = rsp['cost']['input'] + rsp['cost']['output']
-        # rsp['cost']['currency'] = models_info[rsp['model']]['currency']
 
         end_time = time.time()
         rsp['time'] = end_time - start_time
@@ -138,11 +135,11 @@ def cost(rsp, models_info=models_info):
 
     print(f"""{rsp['model']}:
 返回：{rsp['content']}
-          
+
 token：
 输入：{rsp['token']['input']}
 输出：{rsp['token']['output']}
-合计：{rsp['token']['total']}    
+合计：{rsp['token']['total']}
 耗时：{round(rsp['time'],2)} 秒
 输出速度（忽略网络延迟 & 理解输入）：
 {round(rsp['token']['total']/rsp['time'], 2)} token/s
@@ -169,8 +166,7 @@ messages = [
     }
 ]
 
-rsp = LLM(messages=messages, model_name='gpt-4o-mini', params={'max_tokens':4096})
-rsp = cost(rsp)
+rsp = LLM(messages=messages, model_name='Baichuan4', stream=True, params={'max_tokens':1024})
 ```
 
 打印信息如下
@@ -202,7 +198,17 @@ token：
   'currency': 'USD'}}
 ```
 
-
+也可以像这样批量测
+```python
+for key in models_info.keys():
+  try:
+    print(key)
+    rsp = LLM(messages=messages, model_name=key, stream=True, params={'max_tokens':1024})
+    print(rsp)
+    print("\n\n")
+  except:
+    continue
+```
 
 ## 其他
 
