@@ -1,0 +1,30 @@
+{
+    "Baichuan": {
+        "base_url": "https://api.baichuan-ai.com/v1",
+        "chinese_name": "百川"
+    },
+    "DeepSeek": {
+        "base_url": "https://api.deepseek.com",
+        "chinese_name": "深度求索"
+    },
+    "Moonshot": {
+        "base_url": "https://api.moonshot.cn/v1",
+        "chinese_name": "月之暗面"
+    },
+    "OpenAI": {
+        "base_url": "https://api.openai.com/v1",
+        "chinese_name": "OpenAI"
+    },
+    "Qwen": {
+        "base_url": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+        "chinese_name": "通义千问"
+    },
+    "Stepfun": {
+        "base_url": "https://api.stepfun.com/v1",
+        "chinese_name": "阶跃星辰"
+    },
+    "Zhipu": {
+        "base_url": "https://open.bigmodel.cn/api/paas/v4/",
+        "chinese_name": "智谱"
+    }
+}
