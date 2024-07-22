@@ -239,14 +239,6 @@
         "max_context_length": 256000,
         "max_output_length": 0
     },
-    "step-2-16k-nightly": {
-        "brand": "Step",
-        "input_cost": 38,
-        "output_cost": 120,
-        "currency": "CNY",
-        "max_context_length": 16000,
-        "max_output_length": 0
-    },
     "step-1v-8k": {
         "brand": "Step",
         "input_cost": 5,
@@ -261,6 +253,14 @@
         "output_cost": 70,
         "currency": "CNY",
         "max_context_length": 32000,
+        "max_output_length": 0
+    },
+    "step-2-16k-nightly": {
+        "brand": "Step",
+        "input_cost": 38,
+        "output_cost": 120,
+        "currency": "CNY",
+        "max_context_length": 16000,
         "max_output_length": 0
     }
 }
