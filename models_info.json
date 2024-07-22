@@ -7,6 +7,14 @@
         "max_context_length": 0,
         "max_output_length": 0
     },
+    "deepseek-coder": {
+        "brand": "DeepSeek",
+        "input_cost": 1,
+        "output_cost": 2,
+        "currency": "CNY",
+        "max_context_length": 0,
+        "max_output_length": 0
+    },
     "glm-4": {
         "brand": "Zhipu",
         "input_cost": 100,
@@ -93,6 +101,166 @@
         "output_cost": 0.6,
         "currency": "USD",
         "max_context_length": 0,
+        "max_output_length": 0
+    },
+    "moonshot-v1-8k": {
+        "brand": "Moonshot",
+        "input_cost": 12,
+        "output_cost": 12,
+        "currency": "CNY",
+        "max_context_length": 0,
+        "max_output_length": 0
+    },
+    "moonshot-v1-32k": {
+        "brand": "Moonshot",
+        "input_cost": 24,
+        "output_cost": 24,
+        "currency": "CNY",
+        "max_context_length": 0,
+        "max_output_length": 0
+    },
+    "moonshot-v1-128k": {
+        "brand": "Moonshot",
+        "input_cost": 60,
+        "output_cost": 60,
+        "currency": "CNY",
+        "max_context_length": 0,
+        "max_output_length": 0
+    },
+    "qwen-long": {
+        "brand": "Qwen",
+        "input_cost": 0.5,
+        "output_cost": 2,
+        "currency": "CNY",
+        "max_context_length": 0,
+        "max_output_length": 0
+    },
+    "qwen-turbo-0624": {
+        "brand": "Qwen",
+        "input_cost": 2,
+        "output_cost": 6,
+        "currency": "CNY",
+        "max_context_length": 0,
+        "max_output_length": 0
+    },
+    "qwen-turbo-0206": {
+        "brand": "Qwen",
+        "input_cost": 2,
+        "output_cost": 6,
+        "currency": "CNY",
+        "max_context_length": 0,
+        "max_output_length": 0
+    },
+    "qwen-plus-0624": {
+        "brand": "Qwen",
+        "input_cost": 4,
+        "output_cost": 12,
+        "currency": "CNY",
+        "max_context_length": 0,
+        "max_output_length": 0
+    },
+    "qwen-plus-0206": {
+        "brand": "Qwen",
+        "input_cost": 4,
+        "output_cost": 12,
+        "currency": "CNY",
+        "max_context_length": 0,
+        "max_output_length": 0
+    },
+    "qwen-max-0428": {
+        "brand": "Qwen",
+        "input_cost": 4,
+        "output_cost": 12,
+        "currency": "CNY",
+        "max_context_length": 0,
+        "max_output_length": 0
+    },
+    "qwen-max-0403": {
+        "brand": "Qwen",
+        "input_cost": 4,
+        "output_cost": 12,
+        "currency": "CNY",
+        "max_context_length": 0,
+        "max_output_length": 0
+    },
+    "qwen-max-0107": {
+        "brand": "Qwen",
+        "input_cost": 4,
+        "output_cost": 12,
+        "currency": "CNY",
+        "max_context_length": 0,
+        "max_output_length": 0
+    },
+    "qwen-max-1201": {
+        "brand": "Qwen",
+        "input_cost": 12,
+        "output_cost": 12,
+        "currency": "CNY",
+        "max_context_length": 0,
+        "max_output_length": 0
+    },
+    "qwen-max-longcontext": {
+        "brand": "Qwen",
+        "input_cost": 4,
+        "output_cost": 12,
+        "currency": "CNY",
+        "max_context_length": 0,
+        "max_output_length": 0
+    },
+    "step-1-8k": {
+        "brand": "Step",
+        "input_cost": 5,
+        "output_cost": 20,
+        "currency": "CNY",
+        "max_context_length": 8000,
+        "max_output_length": 0
+    },
+    "step-1-32k": {
+        "brand": "Step",
+        "input_cost": 15,
+        "output_cost": 70,
+        "currency": "CNY",
+        "max_context_length": 32000,
+        "max_output_length": 0
+    },
+    "step-1-128k": {
+        "brand": "Step",
+        "input_cost": 40,
+        "output_cost": 200,
+        "currency": "CNY",
+        "max_context_length": 128000,
+        "max_output_length": 0
+    },
+    "step-1-256k": {
+        "brand": "Step",
+        "input_cost": 95,
+        "output_cost": 300,
+        "currency": "CNY",
+        "max_context_length": 256000,
+        "max_output_length": 0
+    },
+    "step-2-16k-nightly": {
+        "brand": "Step",
+        "input_cost": 38,
+        "output_cost": 120,
+        "currency": "CNY",
+        "max_context_length": 16000,
+        "max_output_length": 0
+    },
+    "step-1v-8k": {
+        "brand": "Step",
+        "input_cost": 5,
+        "output_cost": 20,
+        "currency": "CNY",
+        "max_context_length": 8000,
+        "max_output_length": 0
+    },
+    "step-1v-32k": {
+        "brand": "Step",
+        "input_cost": 15,
+        "output_cost": 70,
+        "currency": "CNY",
+        "max_context_length": 32000,
         "max_output_length": 0
     }
 }
