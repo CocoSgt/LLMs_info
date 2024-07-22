@@ -5,7 +5,7 @@
         "output_cost": 100,
         "currency": "CNY",
         "max_context_length": 32000,
-        "max_output_length": 0
+        "max_output_length": 2048
     },
     "Baichuan3-turbo": {
         "brand": "Baichuan",
@@ -13,7 +13,7 @@
         "output_cost": 12,
         "currency": "CNY",
         "max_context_length": 32000,
-        "max_output_length": 0
+        "max_output_length": 2048
     },
     "Baichuan3-turbo-128k": {
         "brand": "Baichuan",
@@ -21,7 +21,7 @@
         "output_cost": 24,
         "currency": "CNY",
         "max_context_length": 128000,
-        "max_output_length": 0
+        "max_output_length": 2048
     },
     "deepseek-chat": {
         "brand": "DeepSeek",
