@@ -16,6 +16,7 @@
 - **智谱 (Zhipu)**
 
 （先选择选择这些，是因为它们都支持 OpenAI SDK）
+另："max_context_length" 和 "max_output_length" 这俩值可能有问题，有些我给的 0，是因为官网没有找到，我需要进一步手动测试。
 
 
 ## 使用方法
