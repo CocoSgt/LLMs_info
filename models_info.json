@@ -208,7 +208,7 @@
         "max_output_length": 0
     },
     "step-1-8k": {
-        "brand": "Step",
+        "brand": "StepFun",
         "input_cost": 5,
         "output_cost": 20,
         "currency": "CNY",
@@ -216,7 +216,7 @@
         "max_output_length": 0
     },
     "step-1-32k": {
-        "brand": "Step",
+        "brand": "StepFun",
         "input_cost": 15,
         "output_cost": 70,
         "currency": "CNY",
@@ -224,7 +224,7 @@
         "max_output_length": 0
     },
     "step-1-128k": {
-        "brand": "Step",
+        "brand": "StepFun",
         "input_cost": 40,
         "output_cost": 200,
         "currency": "CNY",
@@ -232,7 +232,7 @@
         "max_output_length": 0
     },
     "step-1-256k": {
-        "brand": "Step",
+        "brand": "StepFun",
         "input_cost": 95,
         "output_cost": 300,
         "currency": "CNY",
@@ -240,7 +240,7 @@
         "max_output_length": 0
     },
     "step-1v-8k": {
-        "brand": "Step",
+        "brand": "StepFun",
         "input_cost": 5,
         "output_cost": 20,
         "currency": "CNY",
@@ -248,7 +248,7 @@
         "max_output_length": 0
     },
     "step-1v-32k": {
-        "brand": "Step",
+        "brand": "StepFun",
         "input_cost": 15,
         "output_cost": 70,
         "currency": "CNY",
@@ -256,7 +256,7 @@
         "max_output_length": 0
     },
     "step-2-16k-nightly": {
-        "brand": "Step",
+        "brand": "StepFun",
         "input_cost": 38,
         "output_cost": 120,
         "currency": "CNY",
