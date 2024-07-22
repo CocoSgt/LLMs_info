@@ -1,13 +1,12 @@
 # LLMs 信息
 
-这个项目里目前就俩 JSON 文件：
+这个项目里目前就俩 JSON 文件，持续更新ing：
 - `models_info.json`: 包含不同大预言模型的信息，如品牌、费用和最大上下文长度。
 - `companies_info.json`: 包含提供这些模型的公司的信息，包括用于 OpenAI SDK 的 base_url 
 
 你可以通过 requests 的方式，直接拉取这些信息。
 
-请注意，目前包括以下几家公司的最新模型，后续会不断迭代：
-
+目前包括以下几家公司的最新模型，持续更新ing：
 - **百川 (Baichuan)**
 - **深度求索 (DeepSeek)**
 - **月之暗面 (Moonshot)**
@@ -204,18 +203,15 @@ token：
 ```
 
 
-## 说明
 
-这里的模型信息并不完全，仅包含了支持 OpenAI SDK 的各家公司最新一批模型。我会不断维护和更新这个项目，以确保信息的时效性和准确性。
+## 其他
 
+如果有任何建议或改进，请随时提交Pull Request或Issue，谢谢支持！
 
-## 贡献
-
-欢迎大家参与到这个项目中来，提供更多的语言模型信息和改进代码。如果您有任何建议或改进，请随时提交Pull Request或Issue，一起维护和完善这个项目。谢谢支持！
-
-
----
 
 **GitHub 项目地址**: [LLMs_info](https://github.com/CocoSgt/LLMs_info)
 
-**我的公众号**: 赛博禅心
+**个人公众号**: 赛博禅心
+
+![image](https://github.com/user-attachments/assets/0f699f3c-eae6-4d6a-b609-1a22cb06b4c4)
+
