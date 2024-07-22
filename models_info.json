@@ -100,32 +100,32 @@
         "input_cost": 30,
         "output_cost": 60,
         "currency": "USD",
-        "max_context_length": 0,
-        "max_output_length": 0
+        "max_context_length": 8192,
+        "max_output_length": 8192
     },
     "gpt-4-turbo": {
         "brand": "OpenAI",
         "input_cost": 10,
         "output_cost": 30,
         "currency": "USD",
-        "max_context_length": 0,
-        "max_output_length": 0
+        "max_context_length": 128000,
+        "max_output_length": 4096
     },
     "gpt-4o": {
         "brand": "OpenAI",
         "input_cost": 5,
         "output_cost": 15,
         "currency": "USD",
-        "max_context_length": 0,
-        "max_output_length": 0
+        "max_context_length": 128000,
+        "max_output_length": 4096
     },
     "gpt-4o-mini": {
         "brand": "OpenAI",
         "input_cost": 0.15,
         "output_cost": 0.6,
         "currency": "USD",
-        "max_context_length": 0,
-        "max_output_length": 0
+        "max_context_length": 128000,
+        "max_output_length": 16384
     },
     "moonshot-v1-8k": {
         "brand": "Moonshot",
