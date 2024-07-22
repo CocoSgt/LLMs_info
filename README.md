@@ -43,8 +43,7 @@ def fetch_json_from_url(url):
       return None
 
 models_info = fetch_json_from_url("https://raw.githubusercontent.com/CocoSgt/LLMs_info/main/models_info.json")
-companies_info = fetch_json_from_url("https://raw.githubusercontent.com/CocoSgt/LLMs_info/main/companies_info.json")
-```
+companies_info = fetch_json_from_url("https://raw.githubusercontent.com/CocoSgt/LLMs_info/main/companies_info.json")```
 
 ### 示例：调用语言模型
 
@@ -154,7 +153,8 @@ token：
     if rsp['cost']['currency'] == "USD":
         print(f"千次折合人民币：{format(1000 * 7.27 * rsp['cost']['total'], '.3g')} CNY")
     print()
-    return rsp```
+    return rsp
+```
 
 
 
