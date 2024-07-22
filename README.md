@@ -1,7 +1,7 @@
 # LLMs 信息
 
 这个项目里目前就俩 JSON 文件，持续更新ing：
-- `models_info.json`: 包含不同大预言模型的信息，如品牌、费用和最大上下文长度。
+- `models_info.json`: 包含不同大模型的信息，如品牌、价格（每百万token）和最大上下文长度。
 - `companies_info.json`: 包含提供这些模型的公司的信息，包括用于 OpenAI SDK 的 base_url 
 
 你可以通过 requests 的方式，直接拉取这些信息。
