@@ -4,7 +4,7 @@
         "input_cost": 100,
         "output_cost": 100,
         "currency": "CNY",
-        "max_context_length": 32000,
+        "max_context_length": 32768,
         "max_output_length": 2048
     },
     "Baichuan3-turbo": {
@@ -12,7 +12,7 @@
         "input_cost": 12,
         "output_cost": 12,
         "currency": "CNY",
-        "max_context_length": 32000,
+        "max_context_length": 32768,
         "max_output_length": 2048
     },
     "Baichuan3-turbo-128k": {
@@ -20,7 +20,7 @@
         "input_cost": 24,
         "output_cost": 24,
         "currency": "CNY",
-        "max_context_length": 128000,
+        "max_context_length": 131072,
         "max_output_length": 2048
     },
     "deepseek-chat": {
@@ -28,72 +28,72 @@
         "input_cost": 1,
         "output_cost": 2,
         "currency": "CNY",
-        "max_context_length": 0,
-        "max_output_length": 0
+        "max_context_length": 128000,
+        "max_output_length": 4096
     },
     "deepseek-coder": {
         "brand": "DeepSeek",
         "input_cost": 1,
         "output_cost": 2,
         "currency": "CNY",
-        "max_context_length": 0,
-        "max_output_length": 0
+        "max_context_length": 128000,
+        "max_output_length": 4096
     },
     "glm-4": {
         "brand": "Zhipu",
         "input_cost": 100,
         "output_cost": 100,
         "currency": "CNY",
-        "max_context_length": 0,
-        "max_output_length": 0
+        "max_context_length": 128000,
+        "max_output_length": 4095
     },
     "glm-4-0520": {
         "brand": "Zhipu",
         "input_cost": 100,
         "output_cost": 100,
         "currency": "CNY",
-        "max_context_length": 0,
-        "max_output_length": 0
+        "max_context_length": 128000,
+        "max_output_length": 4095
     },
     "glm-4-air": {
         "brand": "Zhipu",
         "input_cost": 1,
         "output_cost": 1,
         "currency": "CNY",
-        "max_context_length": 0,
-        "max_output_length": 0
+        "max_context_length": 128000,
+        "max_output_length": 4095
     },
     "glm-4-airx": {
         "brand": "Zhipu",
         "input_cost": 10,
         "output_cost": 10,
         "currency": "CNY",
-        "max_context_length": 0,
-        "max_output_length": 0
+        "max_context_length": 128000,
+        "max_output_length": 4095
     },
     "glm-4-alltools": {
         "brand": "Zhipu",
         "input_cost": 100,
         "output_cost": 100,
         "currency": "CNY",
-        "max_context_length": 0,
-        "max_output_length": 0
+        "max_context_length": 128000,
+        "max_output_length": 20480
     },
     "glm-4-flash": {
         "brand": "Zhipu",
         "input_cost": 0.1,
         "output_cost": 0.1,
         "currency": "CNY",
-        "max_context_length": 0,
-        "max_output_length": 0
+        "max_context_length": 128000,
+        "max_output_length": 4095
     },
     "glm-4v": {
         "brand": "Zhipu",
         "input_cost": 50,
         "output_cost": 50,
         "currency": "CNY",
-        "max_context_length": 0,
-        "max_output_length": 0
+        "max_context_length": 128000,
+        "max_output_length": 1024
     },
     "gpt-4": {
         "brand": "OpenAI",
@@ -132,7 +132,7 @@
         "input_cost": 12,
         "output_cost": 12,
         "currency": "CNY",
-        "max_context_length": 0,
+        "max_context_length": 8192,
         "max_output_length": 0
     },
     "moonshot-v1-32k": {
@@ -140,7 +140,7 @@
         "input_cost": 24,
         "output_cost": 24,
         "currency": "CNY",
-        "max_context_length": 0,
+        "max_context_length": 32000,
         "max_output_length": 0
     },
     "moonshot-v1-128k": {
@@ -148,7 +148,7 @@
         "input_cost": 60,
         "output_cost": 60,
         "currency": "CNY",
-        "max_context_length": 0,
+        "max_context_length": 12800,
         "max_output_length": 0
     },
     "qwen-long": {
@@ -159,12 +159,20 @@
         "max_context_length": 0,
         "max_output_length": 0
     },
+    "qwen-turbo": {
+        "brand": "Qwen",
+        "input_cost": 2,
+        "output_cost": 6,
+        "currency": "CNY",
+        "max_context_length": 8000,
+        "max_output_length": 0
+    },
     "qwen-turbo-0624": {
         "brand": "Qwen",
         "input_cost": 2,
         "output_cost": 6,
         "currency": "CNY",
-        "max_context_length": 0,
+        "max_context_length": 8000,
         "max_output_length": 0
     },
     "qwen-turbo-0206": {
@@ -172,64 +180,80 @@
         "input_cost": 2,
         "output_cost": 6,
         "currency": "CNY",
-        "max_context_length": 0,
+        "max_context_length": 8000,
         "max_output_length": 0
+    },
+    "qwen-plus": {
+        "brand": "Qwen",
+        "input_cost": 4,
+        "output_cost": 12,
+        "currency": "CNY",
+        "max_context_length": 32000,
+        "max_output_length": 8000
     },
     "qwen-plus-0624": {
         "brand": "Qwen",
         "input_cost": 4,
         "output_cost": 12,
         "currency": "CNY",
-        "max_context_length": 0,
-        "max_output_length": 0
+        "max_context_length": 32000,
+        "max_output_length": 8000
     },
     "qwen-plus-0206": {
         "brand": "Qwen",
         "input_cost": 4,
         "output_cost": 12,
         "currency": "CNY",
-        "max_context_length": 0,
-        "max_output_length": 0
+        "max_context_length": 32000,
+        "max_output_length": 8000
+    },
+    "qwen-max": {
+        "brand": "Qwen",
+        "input_cost": 4,
+        "output_cost": 12,
+        "currency": "CNY",
+        "max_context_length": 8000,
+        "max_output_length": 2000
     },
     "qwen-max-0428": {
         "brand": "Qwen",
         "input_cost": 4,
         "output_cost": 12,
         "currency": "CNY",
-        "max_context_length": 0,
-        "max_output_length": 0
+        "max_context_length": 8000,
+        "max_output_length": 2000
     },
     "qwen-max-0403": {
         "brand": "Qwen",
         "input_cost": 4,
         "output_cost": 12,
         "currency": "CNY",
-        "max_context_length": 0,
-        "max_output_length": 0
+        "max_context_length": 8000,
+        "max_output_length": 2000
     },
     "qwen-max-0107": {
         "brand": "Qwen",
         "input_cost": 4,
         "output_cost": 12,
         "currency": "CNY",
-        "max_context_length": 0,
-        "max_output_length": 0
+        "max_context_length": 8000,
+        "max_output_length": 2000
     },
     "qwen-max-1201": {
         "brand": "Qwen",
         "input_cost": 12,
         "output_cost": 12,
         "currency": "CNY",
-        "max_context_length": 0,
-        "max_output_length": 0
+        "max_context_length": 8000,
+        "max_output_length": 2000
     },
     "qwen-max-longcontext": {
         "brand": "Qwen",
         "input_cost": 4,
         "output_cost": 12,
         "currency": "CNY",
-        "max_context_length": 0,
-        "max_output_length": 0
+        "max_context_length": 30000,
+        "max_output_length": 8000
     },
     "step-1-8k": {
         "brand": "StepFun",
