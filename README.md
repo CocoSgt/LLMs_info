@@ -176,6 +176,35 @@ rsp = LLM(messages=messages, model_name='gpt-4o-mini', params={'max_tokens':4096
 rsp = cost(rsp)
 ```
 
+打印信息如下
+```python
+gpt-4o-mini:
+返回：Hello! How can I assist you today?
+          
+token：
+输入：19
+输出：9
+合计：28    
+耗时：0.5 秒
+输出速度（忽略网络延迟 & 理解输入）：
+55.74 token/s
+
+千次开销: 0.00825 USD
+千次折合人民币：0.06 CNY
+```
+
+并且，rsp 为
+```python
+{'model': 'gpt-4o-mini',
+ 'content': 'Hello! How can I assist you today?',
+ 'token': {'input': 19, 'output': 9, 'total': 28},
+ 'time': 0.5023195743560791,
+ 'cost': {'input': 2.8500000000000002e-06,
+  'output': 5.399999999999999e-06,
+  'total': 8.249999999999999e-06,
+  'currency': 'USD'}}
+```
+
 
 ## 说明
 
