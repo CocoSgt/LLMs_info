@@ -159,6 +159,24 @@
         "max_context_length": 128000,
         "max_output_length": 16384
     },
+    
+    "o1-preview": {
+        "brand": "OpenAI",
+        "input_cost": 15,
+        "output_cost": 60,
+        "currency": "USD",
+        "max_context_length": 128000,
+        "max_output_length": 32768
+    },
+    
+    "o1-mini": {
+        "brand": "OpenAI",
+        "input_cost": 3,
+        "output_cost": 12,
+        "currency": "USD",
+        "max_context_length": 128000,
+        "max_output_length": 65536
+    },
     "moonshot-v1-8k": {
         "brand": "Moonshot",
         "input_cost": 12,
